@@ -1,3 +1,4 @@
+
 .pricing {
     background-color: #FCF2EB;
     height: 120vh;
@@ -37,4 +38,18 @@
     }
 
 
+
+
+
+.firstslide{
+        display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
 }
+
+.fslidetext{
+    display: flex;justify-content: center;align-items: center;
+  }
