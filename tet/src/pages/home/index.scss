@@ -1,4 +1,45 @@
 
+.pricing {
+    background-color: #FCF2EB;
+    height: 120vh;
+    width: 100vw;
+    padding: 50px 0;
+
+    .pricingdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 56px;
+        }
+
+        p:nth-child(1) {
+            font-style: italic;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .card {
+            margin: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+
+
+
 
 .firstslide{
         display: flex;
@@ -11,4 +52,4 @@
 
 .fslidetext{
     display: flex;justify-content: center;align-items: center;
-}
+  }
