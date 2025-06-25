@@ -1,5 +1,7 @@
 import React from 'react'
 import "./index.scss"
+import { Link } from 'react-router-dom'
+import Home from '../../../pages/home'
 
 const Header = () => {
     return (
@@ -9,10 +11,10 @@ const Header = () => {
                     <h2>Floral Studio</h2>
                     <nav>
                         <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="register">Register</Link></li>
 
-                        <li><a href="">Portfolio</a></li>
+                        <li><Link to="login">Login</Link></li>
 
                         <li><a href="">Pricing</a></li>
                         <li><a href="">Contacts</a></li>
