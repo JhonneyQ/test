@@ -50,30 +50,8 @@ const Home = () => {
   )
   return (
     <>
-      <main>
-        <section className='pricing'>
-          <div className="container">
-            <div className="pricingdiv">
-              <p>Devoted to wonderfull beauty</p>
-              <h1>Flowers Pricing</h1>
-              <div className="cards">
-                {
-                  cardinfo.map(({ name, price, image, id }) => {
-                    return <div className="card" key={id}>
-                      <img src={image} alt="Flower" />
-                      <h2>{name}</h2>
-                      <p>{"$" + price}</p>
-                    </div>
-                  })
-                }
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
 
-      <section>
+     <section>
 
         <div className="hero">
           <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -175,7 +153,31 @@ const Home = () => {
         </div>
 
       </section>
+
+      <section className='pricing'>
+        <div className="container">
+          <div className="pricingdiv">
+            <p>Devoted to wonderfull beauty</p>
+            <h1>Flowers Pricing</h1>
+            <div className="cards">
+              {
+                cardinfo.map(({ name, price, image, id }) => {
+                  return <div className="card" key={id}>
+                    <img src={image} alt="Flower" />
+                    <h2>{name}</h2>
+                    <p>{"$" + price}</p>
+                  </div>
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </>
+
   )
+
 }
 
 export default Home
