@@ -1,0 +1,40 @@
+footer{
+    background-color: rgb(224, 236, 220);
+    padding: 100px;
+    .all{
+        display: flex;
+        
+        justify-content: space-between;
+        .inp{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            color: #0c5b47;
+            input{
+                width: 300px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #0c5b47;
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            li{
+                a{
+                    color:#0c5b47 ;
+                    font-size: 20px;
+                    text-decoration: none;
+                    list-style: none;
+                }
+            }
+        }
+        h2{
+            color: #0c5b47;
+            font-weight: lighter;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+header {
+    background-color:rgba(16, 99, 78, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    // .container{
+    //     display: flex;
+    //     align-items: center;
+    // }
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            color: white;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            ul {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            li {
+                display: flex;
+                align-items: center;
+                
+                a {
+                    
+                    text-decoration: none;
+                    list-style: none;
+                    color: white;
+                }
+            }
+
+        }
+        }
+    }
+}

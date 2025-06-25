@@ -6,16 +6,21 @@ import './App.css'
 import Login from './pages/login';
 import Register from './pages/register';
 import Home from './pages/home';
+import Client from './client/outlet';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Routes path="/">
-        <Route index element={<Home />} />
-        <Route path='login' element={<Login />} />
-        <Route path='register' element={<Register />} />
+      <Routes >
+        <Route path="/" element={<Client />}>
+          <Route index element={<Home />} />
+          <Route path='login' element={<Login />} />
+          <Route path='register' element={<Register />} />
+        </Route>
+
       </Routes>
     </>
   )

@@ -7,7 +7,10 @@ const Register = () => {
   const [regInfo, setregInfo] = useState({
     name: '',
     password: '',
-    email: ''
+    email: '',
+    surname: "",
+    passwordConfirm: "",
+    username:""
   });
 
   const navigate = useNavigate();
@@ -19,7 +22,7 @@ const Register = () => {
     }
 
     try {
-      const res = await axios.post("", regInfo);
+      const res = await axios.post("https://nihadrs-001-site1.jtempurl.com/api/Users", regInfo);
       if (res.status === 200) {
         navigate('/login');
       }
@@ -44,12 +47,36 @@ const Register = () => {
               onChange={(e) => setregInfo({ ...regInfo, name: e.target.value })}
             />
           </div>
+          <div className='surnamename'>
+            <input
+              type="text"
+              placeholder="surname"
+              value={regInfo.surname}
+              onChange={(e) => setregInfo({ ...regInfo, surname: e.target.value })}
+            />
+          </div>
+          <div className='username'>
+            <input
+              type="text"
+              placeholder="username"
+              value={regInfo.username}
+              onChange={(e) => setregInfo({ ...regInfo, username: e.target.value })}
+            />
+          </div>
           <div className='password'>
             <input
               type='password'
               placeholder="Password"
               value={regInfo.password}
               onChange={(e) => setregInfo({ ...regInfo, password: e.target.value })}
+            />
+          </div>
+           <div className='passwordConfirm'>
+            <input
+              type='password'
+              placeholder="ConfirmPassword"
+              value={regInfo.passwordConfirm}
+              onChange={(e) => setregInfo({ ...regInfo, passwordConfirm: e.target.value })}
             />
           </div>
           <div className='email'>
